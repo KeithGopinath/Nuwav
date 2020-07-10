@@ -9,28 +9,18 @@ export default function App() {
       {/* <StatusBar style="auto" /> */}
       <View style={styles.box}>
         <Text style={styles.welcome}>Welcome!</Text>
-        <View>
-          {/* <Button
-            color="#2E8B57"
-            title="Login"
-            onPress={() => Alert.alert('Login')}
-          />
-          <Button
-            color="#2E8B57"
-            title="Sign Up (Start Here!)"
-            onPress={() => Alert.alert('Sign Up')}
-          /> */}
+        <View style={{margin: 20}}>
           <TouchableOpacity
             style={styles.button}
             onPress={() => Alert.alert('Login')}
           >
-            <Text> Login </Text>
+            <Text style={styles.text}> Login </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
             onPress={() => Alert.alert('Sign Up')}
           >
-            <Text> Sign Up (Start Here!) </Text>
+            <Text style={styles.text}> Sign Up (Start Here!) </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -51,32 +41,34 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
     textAlign: 'center',
     color: "white",
-    marginTop: 70,
+    marginTop: 90,
     fontFamily: 'Verdana',
   },
   box: {
     flex: 3,
     backgroundColor: '#fff',
     borderRadius: 7,
-    // borderWidth: 0.5,
     borderColor: '#000',
     padding: 10,
-    margin: 70,
+    margin: 50,
     width: 300,
   },
   welcome: {
     textAlign: 'center',
     fontWeight: 'bold',
-    // color: "white",
-    fontSize: 25,
+    fontSize: 30,
+    marginTop:10,
   },
   button: {
     flexDirection: 'row',
     justifyContent: 'center',
-    color: "white",
-    alignItems: 'center',
     backgroundColor: '#2E8B57',
-    padding: 10,
-    borderRadius: 7,
+    padding: 15,
+    marginTop: 40,
+    borderRadius: 70,
   },
+  text: {
+    color: "white",
+    fontSize: 20,
+  }
 });
