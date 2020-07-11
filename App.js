@@ -5,7 +5,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.main}>New Wave</Text>
+      <Text style={styles.main}>New wave </Text>
+      
       {/* <StatusBar style="auto" /> */}
       <View style={styles.box}>
         <Text style={styles.welcome}>Welcome!</Text>
@@ -38,12 +39,24 @@ const styles = StyleSheet.create({
   main: {
     flex: 1,
     fontSize: 45,
+    letterSpacing:-2,
+    color: "#ffffff", 
     textDecorationLine: 'underline',
     textAlign: 'center',
     color: "white",
-    marginTop: 90,
-    // fontFamily: 'Verdana',
+    marginTop: 70,
+    fontWeight: 'bold',
+    fontStyle: 'italic',
+    fontFamily:'',
   },
+
+  lineStyle:{
+    color: "white",
+    marginTop:-60,
+    fontWeight: 'bold',
+  
+    
+},
   box: {
     flex: 3,
     backgroundColor: '#fff',
