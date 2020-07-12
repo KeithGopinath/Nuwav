@@ -38,11 +38,15 @@ const styles = StyleSheet.create({
   main: {
     flex: 1,
     fontSize: 45,
+    letterSpacing:-2,
+    color: "#ffffff", 
     textDecorationLine: 'underline',
     textAlign: 'center',
     color: "white",
-    marginTop: 90,
-    // fontFamily: 'Verdana',
+    marginTop: 70,
+    fontWeight: 'bold',
+    fontStyle: 'italic',
+    fontFamily: 'Verdana',
   },
   box: {
     flex: 3,

@@ -5,6 +5,8 @@ import { PersistGate } from 'redux-persist/lib/integration/react'
 // import RootScreen from './Containers/Root/RootScreen'
 import configureStore from './configureStore'
 import App from './containers/Home'
+import Login from '../App/components/Login'
+import Signup from './components/Signup'
 
 const { store, persistor } = configureStore()
 
@@ -24,6 +26,8 @@ export default class Root extends Component {
          */}
         <PersistGate loading={null} persistor={persistor}>
           <App />
+          {/* <Login/> 
+          <Signup/> */}
         </PersistGate>
       </Provider>
     )
